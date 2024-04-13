@@ -1,12 +1,12 @@
 # Defining a Constant
-FILEPATH = r"C:\Users\Rutuja Bhagane\PycharmProjects\WebApp1\todofile.txt"
+FILEPATH = "todofile.txt"
 def read_file(filepath=FILEPATH):
     """ This is a doc string
     This is use to describe what the function does
     This Function to read the file
 
     """
-    with open(filepath, "r") as file_local:
+    with open(filepath,"r") as file_local:
         todos_local = file_local.readlines()
         return todos_local
 
